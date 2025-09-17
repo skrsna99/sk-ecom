@@ -10,9 +10,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.annotation.processing.Generated;
-
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -23,6 +20,6 @@ public class Category {
     private Long CategoryId;
     @NotBlank
     @Size(min = 5, message = "category name must contain 4 characters")
-    private String CategoryName;
+    private String categoryName;
 
 }
